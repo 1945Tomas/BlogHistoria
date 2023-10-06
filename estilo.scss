@@ -1,0 +1,657 @@
+
+
+//Mi PALETA
+$Color1: #9FADBF;
+$Color2: #8C071F;
+$Color3: #D9C091;
+$Color4: #59452C;
+$Color5: #BFA380;
+$Color6: #400101;
+
+
+*{
+    box-sizing: border-box;
+    margin: 0%;
+    padding: 0;
+
+body{
+    background-color: rgba(255, 255, 255, 0.852);
+}
+
+.encabezado{
+    height: 100px;
+    margin: 0;
+    position:sticky;
+    width: 100%;
+    padding: 3px;
+    background-color:$Color6;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    align-content:baseline;
+    
+    li{
+        list-style: none;
+        float: right;
+        a{  
+            display: flex;
+            flex-direction: column;
+            justify-content: space-around;
+            align-items: center;
+            text-decoration: none;
+            font-size: 1rem;
+            text-transform: capitalize;
+            color: $Color3;
+            margin-right: 6px;
+            }
+        } 
+img{
+    width: 80px;
+    height: 80px;
+    padding-left: 15px;
+    border-radius: 50%;
+    }
+}  
+
+main{
+height: 200px;
+width: 100%;
+position: relative;
+overflow: hidden;
+.contenidoPrincipal{
+height: 200px;
+display: flex;
+flex-direction: column;
+justify-content: space-between;
+align-items: center;
+margin-top: 0;
+video{
+position: absolute;
+left: 0;
+top: 0;
+height: 250px;
+width: 100%;
+z-index: -1;
+}
+.mainfondo{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #bfb39b52;
+    height: 140px;
+    margin-top: 45px;
+    border-radius: 3px;
+    h1{
+    font-size: 1rem;
+    text-align: center;
+    padding-top: 5px;
+    text-shadow: 5px 5px 3px white;
+    font-weight: 700;
+    }
+    h2{
+    font-weight: 600;
+    text-shadow: 5px 5px 3px white;
+    font-size: 1rem;
+    font-weight: 550;
+    }
+}
+}
+}
+.audio{
+    height: 100px;
+    display: flex;
+    justify-content: end;
+    audio{
+        height: 15px;
+        width: 190px;
+        border-radius: 3px solid black;
+        align-self:center
+        }
+}
+//SECTOR NOTAS
+.notas{
+    height: 1000px;
+    width: 100%;
+    background-color: white;
+    padding: 2px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    h2{
+        font-size: 1.6rem;
+        text-align: center;
+        margin-bottom: 0;
+    }
+    #separador1{
+        width: 70%;
+        color: $Color2;
+        margin: 5 auto; 
+    }
+    .versalles{
+        height: 390px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 10px;
+        margin: 15px;
+        border-radius: 5px solid yellow;
+        img{
+            height: 180px;
+            width: 100%;
+        }
+        h3{
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        p{
+            text-align: justify;
+            padding: 5 px;
+            width: 90%;
+        }
+    }
+    .invasion{
+        height: 300px;
+        width: 95%;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        text-align: center;
+        padding: 5px;
+        margin-top: 0 auto;
+        border-radius: 5px solid yellow;
+        img{
+            height: 180px;
+            width: 100%;
+        }
+        h3{
+            font-size: 18px;
+            text-transform: capitalize;
+        }
+        p{
+            text-align: justify;
+            padding: 5 px;
+            width: 90%;
+        }
+    }
+    #VerMas{
+        height: 30px;
+        width: 80px;
+        background-color: $Color4;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 6px;
+    }
+}
+//VEHICULOS
+.vehiculos_div{
+    height: 450px;
+    width: 100%;
+    background-color: white;
+    .vehiculos{
+    text-align: center;
+    font-size: 1.5rem;
+    text-transform: capitalize;
+    padding: 10px;
+    color: $Color5;
+}
+    #separador2{
+    size: 10;
+    width: 70%;
+    color: #9FADBF;
+    margin: auto;
+}
+    h3{
+    text-align: center;
+    color: $Color6;
+}
+    .aleman{
+    display: flex;
+}
+    .sovietico{
+    display: flex;
+    justify-content: center;
+    width: 150px;
+    margin: auto;
+}
+.animacion{
+    position: relative;
+    width:300px ;
+    transition: all .3s ease;
+    padding: 15px;
+    img:first-child{
+        box-shadow: 0 60px 60px -40px rgba(0 , 30 ,255 , 0.5);
+        border-radius: 5px;
+        object-fit:cover ;
+        width: 100%;
+    }
+    img:last-child{
+        position: absolute;
+        width: 100px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        margin: auto;
+        transform: translateY(20%);
+        transition: .3s ease;
+        opacity: 0;
+    }
+}
+.animacion:hover{
+    transform: 
+    perspective(250px)
+    rotatex(10deg)
+    translatey(-5%)
+    translateZ(0);
+}
+.animacion::before{
+    content: "";
+    position: absolute;
+    bottom: 0;
+    height: 100%;
+    width: 75%;
+    background-image: linear-gradient(
+        to bottom,
+        transparent 10%,
+        rgba(0,0,0,0.5) 50%,
+        rgba(0,0,0) 95%
+    );
+    opacity: 0;
+    transition: all .3s ease;
+}
+.animacion:hover::before{
+    opacity: 1;
+}
+.animacion:hover img:last-child{
+    opacity: 1;
+    transform: translateY(10%);
+}
+#VerMas{
+    height: 40px;
+    width: 90px;
+    background-color: $Color5;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+    padding: 5px;
+    margin-left: 43%;
+}
+}
+// SECCION FRASES
+.frases{
+    height: 750px;
+    background-color: $Color6;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h2{
+        text-align: center;
+        color:$Color1;
+        padding-top: 15px;
+        text-transform: uppercase;
+    } 
+    .card{
+        background-color: black;
+        height: 500px;
+        width: 65%;
+        margin: auto;
+        margin-bottom: 20px;
+        }
+    .card1, .card2, .card3{
+        background-position: center;
+        background-size:contain;
+        background-repeat:no-repeat;
+    }
+    .card1{
+        background-image: url(/multimedia/frases/frase1.jpg);
+    }
+    .card2{
+        background-image: url(/multimedia/frases/frase2.jpg);
+    }
+    .card3{
+        background-image: url(/multimedia/frases/frase3.jpg);
+    }
+        .intofrase{
+            background-color:  (rgba(0, 0, 0, 0.283));
+            margin-top: 40%;
+            border-radius: 5px;
+            h3{
+            text-align: center;
+            font-size: 1rem;
+            color: $Color5;
+            font-weight: 600;
+            text-shadow: 3px 3px 2px $Color6;
+            text-decoration: solid;
+            }
+            p{
+            text-align: center;
+            font-weight: 600;
+            color: $Color1;
+            margin-top: 10px;
+            }
+        }
+}
+.footer{
+    height: 200px;
+    width: 100%;
+    text-align: center;
+    background-color: black;
+    h2{
+        color: $Color1;
+        padding-top: 10px;
+    }
+    p{
+        color: $Color5;
+        font-size: .8rem;
+        padding: 6px;
+        text-align: justify;
+    }
+}
+
+//INICIO RESPONSIVE 
+@media only screen and (min-width: 480px){
+.encabezado{
+    li{
+        a{
+            font-size: 1.6rem;
+            display: inline-block;
+            padding: 10px;
+        }
+    }
+}
+}
+@media only screen and (min-width: 520px){
+.frases{
+    height: 1100px;
+}
+    }
+@media only screen and (min-width: 720px)and (max-width:1023px){
+main{
+    height: 420px;
+    margin-top: 0;
+    .contenidoPrincipal{
+        height: 400px;
+        video{
+            height: 100%;
+            width: 100%;
+        }
+        .mainfondo{
+            display: flex;
+            height: 80%;
+            justify-content: center;
+            margin-top: 75px;
+            border-radius: 3px;
+            h1{
+            font-size: 3rem;
+            text-align: center;
+            padding-top: 5px;
+            text-shadow: 5px 5px 3px white;
+            font-weight: 700;
+            }
+            h2{
+            font-weight: 600;
+            text-shadow: 5px 5px 3px $Color3;
+            font-size: 2rem;
+            font-weight: 550;
+            }
+            }
+    }
+}
+.audio{
+    height: 50px;
+    audio{
+        height: 20px;
+        width: 300px;
+        }
+}
+.notas{
+    .versalles{
+        font-weight: 500;
+        img{
+        height: 300px;
+    } 
+    }
+    .invasion{
+        font-weight: 500;
+        img{
+            height: 300px;
+        }
+    }
+}
+//VEHICULOS
+.vehiculos_div{
+    height: 800px;
+    .vehiculos{
+    text-align: center;
+    font-size: 1.9rem;
+}
+    #separador2{
+    size: 20;
+    height: 2px;
+    color: $Color3;
+}
+    .aleman{
+    display: flex;
+    flex-direction: row;
+}
+    .sovietico{
+    width: 300px;
+    padding-bottom: 40px;
+}
+.animacion{
+    position: relative;
+    padding: 20px;
+    img:last-child{
+        width: 300px;
+    }
+}
+#VerMas{
+    height: 60px;
+    width: 90px;
+    padding: 20px;
+    margin-left: 43%;
+}
+}
+}
+.footer{
+    h2{
+        color: $Color1;
+        padding-top: 5px;
+        font-size: 2.2rem;
+    }
+    p{
+        font-size: 1.1rem;
+        padding: 3px;
+        margin: 0px 0px 15px 15px ;
+        width: 95%;
+    }
+}
+@media only screen and (min-width: 992px)and (max-width: 1023px){
+//SECTOR NOTAS
+.notas{
+    height: 1300px;
+    h2{
+        font-size: 2.5rem;
+    }
+    .versalles{
+        height: 400px;
+        width: 70%;
+        padding: 15px;
+        img{
+            height: 400px;
+            width: 100%;
+        }
+        h3{
+            font-size: 22px;
+        }
+        p{
+            padding: 3 px;
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+    .invasion{
+        height: 400px;
+        width: 70%;
+        img{
+            height: 400px;
+            width: 100%;
+        }
+        h3{
+            font-size: 22px;
+            text-transform: capitalize;
+        }
+        p{
+            padding: 3 px;
+            width: 90%;
+            font-size: 18px;
+        }
+    }
+    #VerMas{
+        height: 40px;
+        width: 90px;
+        background-color: $Color4;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: 6px;
+    }
+}
+}
+@media only screen and (min-width: 1023px){
+    .encabezado{
+    height: 130px;
+        li{
+            a{
+                font-size: 1.9rem;
+                padding: 15px;
+            }
+        }
+    img{
+        height: 100px;
+        width: 100px;
+        margin-left: 20px;
+    }
+    }
+}
+main{
+    height: 520px;
+    margin-top: 0;
+    .contenidoPrincipal{
+        height: 450px;
+        video{
+            height: 100%;
+            width: 100%;
+        }
+        .mainfondo{
+            display: flex;
+            height: 80%;
+            justify-content: center;
+            margin-top: 75px;
+            border-radius: 3px;
+            h1{
+            font-size: 3.3rem;
+            text-align: center;
+            padding-top: 5px;
+            text-shadow: 5px 5px 3px white;
+            font-weight: 700;
+            }
+            h2{
+            font-weight: 600;
+            text-shadow: 5px 5px 3px $Color3;
+            font-size: 2.3rem;
+            font-weight: 650;
+            }
+            }
+    }
+}
+.audio{
+    height: 50px;
+    audio{
+        height: 30px;
+        width: 350px;
+        }
+}
+.notas{
+    height: 1400px;
+    h2{
+    font-size: 2.6rem;
+    padding: 10px;
+    color: $Color2;
+    }
+    h3{
+        font-size: 2.8rem !important;
+        color: $Color3;
+    }
+    .versalles{
+        font-weight: 500;
+        img{
+        height: 350px;
+        width: 50%;
+    } 
+    }
+    .invasion{
+        font-weight: 500;
+        img{
+            height: 350px;
+        }
+    }
+}
+//VEHICULOS
+.vehiculos_div{
+    height: 900px;
+    .vehiculos{
+    text-align: center;
+    font-size: 2.3rem;
+}
+    #separador2{
+    size: 20;
+    height: 2px;
+    color: $Color3;
+}
+    .aleman{
+    display: flex;
+    flex-direction: row;
+}
+    .sovietico{
+    width: 300px;
+    padding-bottom: 40px;
+}
+.animacion{
+    position: relative;
+    padding: 20px;
+    img:last-child{
+        width: 300px;
+    }
+}
+#VerMas{
+    height: 60px;
+    width: 90px;
+    padding: 20px;
+    margin-left: 43%;
+}
+}
+.footer{
+    height: 280px;
+    h2{
+        color: $Color1;
+        padding-top: 2px;
+        font-size: 2.4rem;
+    }
+    p{
+        font-size: 1.5rem;
+        padding: 3px;
+        margin: 0px 0px 15px 15px ;
+        width: 95%;
+    }
+}
+
+
+
+
+}

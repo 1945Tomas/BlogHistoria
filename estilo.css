@@ -1,0 +1,613 @@
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+* body {
+  background-color: rgba(255, 255, 255, 0.852);
+}
+* .encabezado {
+  height: 100px;
+  margin: 0;
+  position: sticky;
+  width: 100%;
+  padding: 3px;
+  background-color: #400101;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  align-content: baseline;
+}
+* .encabezado li {
+  list-style: none;
+  float: right;
+}
+* .encabezado li a {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  font-size: 1rem;
+  text-transform: capitalize;
+  color: #D9C091;
+  margin-right: 6px;
+}
+* .encabezado img {
+  width: 80px;
+  height: 80px;
+  padding-left: 15px;
+  border-radius: 50%;
+}
+* main {
+  height: 200px;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+}
+* main .contenidoPrincipal {
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0;
+}
+* main .contenidoPrincipal video {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 250px;
+  width: 100%;
+  z-index: -1;
+}
+* main .contenidoPrincipal .mainfondo {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(191, 179, 155, 0.3215686275);
+  height: 140px;
+  margin-top: 45px;
+  border-radius: 3px;
+}
+* main .contenidoPrincipal .mainfondo h1 {
+  font-size: 1rem;
+  text-align: center;
+  padding-top: 5px;
+  text-shadow: 5px 5px 3px white;
+  font-weight: 700;
+}
+* main .contenidoPrincipal .mainfondo h2 {
+  font-weight: 600;
+  text-shadow: 5px 5px 3px white;
+  font-size: 1rem;
+  font-weight: 550;
+}
+* .audio {
+  height: 100px;
+  display: flex;
+  justify-content: end;
+}
+* .audio audio {
+  height: 15px;
+  width: 190px;
+  border-radius: 3px solid black;
+  align-self: center;
+}
+* .notas {
+  height: 1000px;
+  width: 100%;
+  background-color: white;
+  padding: 2px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+}
+* .notas h2 {
+  font-size: 1.6rem;
+  text-align: center;
+  margin-bottom: 0;
+}
+* .notas #separador1 {
+  width: 70%;
+  color: #8C071F;
+  margin: 5 auto;
+}
+* .notas .versalles {
+  height: 390px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 10px;
+  margin: 15px;
+  border-radius: 5px solid yellow;
+}
+* .notas .versalles img {
+  height: 180px;
+  width: 100%;
+}
+* .notas .versalles h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+* .notas .versalles p {
+  text-align: justify;
+  padding: 5 px;
+  width: 90%;
+}
+* .notas .invasion {
+  height: 300px;
+  width: 95%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 5px;
+  margin-top: 0 auto;
+  border-radius: 5px solid yellow;
+}
+* .notas .invasion img {
+  height: 180px;
+  width: 100%;
+}
+* .notas .invasion h3 {
+  font-size: 18px;
+  text-transform: capitalize;
+}
+* .notas .invasion p {
+  text-align: justify;
+  padding: 5 px;
+  width: 90%;
+}
+* .notas #VerMas {
+  height: 30px;
+  width: 80px;
+  background-color: #59452C;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+}
+* .vehiculos_div {
+  height: 450px;
+  width: 100%;
+  background-color: white;
+}
+* .vehiculos_div .vehiculos {
+  text-align: center;
+  font-size: 1.5rem;
+  text-transform: capitalize;
+  padding: 10px;
+  color: #BFA380;
+}
+* .vehiculos_div #separador2 {
+  size: 10;
+  width: 70%;
+  color: #9FADBF;
+  margin: auto;
+}
+* .vehiculos_div h3 {
+  text-align: center;
+  color: #400101;
+}
+* .vehiculos_div .aleman {
+  display: flex;
+}
+* .vehiculos_div .sovietico {
+  display: flex;
+  justify-content: center;
+  width: 150px;
+  margin: auto;
+}
+* .vehiculos_div .animacion {
+  position: relative;
+  width: 300px;
+  transition: all 0.3s ease;
+  padding: 15px;
+}
+* .vehiculos_div .animacion img:first-child {
+  box-shadow: 0 60px 60px -40px rgba(0, 30, 255, 0.5);
+  border-radius: 5px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  width: 100%;
+}
+* .vehiculos_div .animacion img:last-child {
+  position: absolute;
+  width: 100px;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  transform: translateY(20%);
+  transition: 0.3s ease;
+  opacity: 0;
+}
+* .vehiculos_div .animacion:hover {
+  transform: perspective(250px) rotatex(10deg) translatey(-5%) translateZ(0);
+}
+* .vehiculos_div .animacion::before {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  height: 100%;
+  width: 75%;
+  background-image: linear-gradient(to bottom, transparent 10%, rgba(0, 0, 0, 0.5) 50%, rgb(0, 0, 0) 95%);
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+* .vehiculos_div .animacion:hover::before {
+  opacity: 1;
+}
+* .vehiculos_div .animacion:hover img:last-child {
+  opacity: 1;
+  transform: translateY(10%);
+}
+* .vehiculos_div #VerMas {
+  height: 40px;
+  width: 90px;
+  background-color: #BFA380;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
+  padding: 5px;
+  margin-left: 43%;
+}
+* .frases {
+  height: 750px;
+  background-color: #400101;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+* .frases h2 {
+  text-align: center;
+  color: #9FADBF;
+  padding-top: 15px;
+  text-transform: uppercase;
+}
+* .frases .card {
+  background-color: black;
+  height: 500px;
+  width: 65%;
+  margin: auto;
+  margin-bottom: 20px;
+}
+* .frases .card1, * .frases .card2, * .frases .card3 {
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+* .frases .card1 {
+  background-image: url(/multimedia/frases/frase1.jpg);
+}
+* .frases .card2 {
+  background-image: url(/multimedia/frases/frase2.jpg);
+}
+* .frases .card3 {
+  background-image: url(/multimedia/frases/frase3.jpg);
+}
+* .frases .intofrase {
+  background-color: rgba(0, 0, 0, 0.283);
+  margin-top: 40%;
+  border-radius: 5px;
+}
+* .frases .intofrase h3 {
+  text-align: center;
+  font-size: 1rem;
+  color: #BFA380;
+  font-weight: 600;
+  text-shadow: 3px 3px 2px #400101;
+  -webkit-text-decoration: solid;
+          text-decoration: solid;
+}
+* .frases .intofrase p {
+  text-align: center;
+  font-weight: 600;
+  color: #9FADBF;
+  margin-top: 10px;
+}
+* .footer {
+  height: 200px;
+  width: 100%;
+  text-align: center;
+  background-color: black;
+}
+* .footer h2 {
+  color: #9FADBF;
+  padding-top: 10px;
+}
+* .footer p {
+  color: #BFA380;
+  font-size: 0.8rem;
+  padding: 6px;
+  text-align: justify;
+}
+@media only screen and (min-width: 480px) {
+  * .encabezado li a {
+    font-size: 1.6rem;
+    display: inline-block;
+    padding: 10px;
+  }
+}
+@media only screen and (min-width: 520px) {
+  * .frases {
+    height: 1100px;
+  }
+}
+@media only screen and (min-width: 720px) and (max-width: 1023px) {
+  * main {
+    height: 420px;
+    margin-top: 0;
+  }
+  * main .contenidoPrincipal {
+    height: 400px;
+  }
+  * main .contenidoPrincipal video {
+    height: 100%;
+    width: 100%;
+  }
+  * main .contenidoPrincipal .mainfondo {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    margin-top: 75px;
+    border-radius: 3px;
+  }
+  * main .contenidoPrincipal .mainfondo h1 {
+    font-size: 3rem;
+    text-align: center;
+    padding-top: 5px;
+    text-shadow: 5px 5px 3px white;
+    font-weight: 700;
+  }
+  * main .contenidoPrincipal .mainfondo h2 {
+    font-weight: 600;
+    text-shadow: 5px 5px 3px #D9C091;
+    font-size: 2rem;
+    font-weight: 550;
+  }
+  * .audio {
+    height: 50px;
+  }
+  * .audio audio {
+    height: 20px;
+    width: 300px;
+  }
+  * .notas .versalles {
+    font-weight: 500;
+  }
+  * .notas .versalles img {
+    height: 300px;
+  }
+  * .notas .invasion {
+    font-weight: 500;
+  }
+  * .notas .invasion img {
+    height: 300px;
+  }
+  * .vehiculos_div {
+    height: 800px;
+  }
+  * .vehiculos_div .vehiculos {
+    text-align: center;
+    font-size: 1.9rem;
+  }
+  * .vehiculos_div #separador2 {
+    size: 20;
+    height: 2px;
+    color: #D9C091;
+  }
+  * .vehiculos_div .aleman {
+    display: flex;
+    flex-direction: row;
+  }
+  * .vehiculos_div .sovietico {
+    width: 300px;
+    padding-bottom: 40px;
+  }
+  * .vehiculos_div .animacion {
+    position: relative;
+    padding: 20px;
+  }
+  * .vehiculos_div .animacion img:last-child {
+    width: 300px;
+  }
+  * .vehiculos_div #VerMas {
+    height: 60px;
+    width: 90px;
+    padding: 20px;
+    margin-left: 43%;
+  }
+}
+* .footer h2 {
+  color: #9FADBF;
+  padding-top: 5px;
+  font-size: 2.2rem;
+}
+* .footer p {
+  font-size: 1.1rem;
+  padding: 3px;
+  margin: 0px 0px 15px 15px;
+  width: 95%;
+}
+@media only screen and (min-width: 992px) and (max-width: 1023px) {
+  * .notas {
+    height: 1300px;
+  }
+  * .notas h2 {
+    font-size: 2.5rem;
+  }
+  * .notas .versalles {
+    height: 400px;
+    width: 70%;
+    padding: 15px;
+  }
+  * .notas .versalles img {
+    height: 400px;
+    width: 100%;
+  }
+  * .notas .versalles h3 {
+    font-size: 22px;
+  }
+  * .notas .versalles p {
+    padding: 3 px;
+    width: 90%;
+    font-size: 18px;
+  }
+  * .notas .invasion {
+    height: 400px;
+    width: 70%;
+  }
+  * .notas .invasion img {
+    height: 400px;
+    width: 100%;
+  }
+  * .notas .invasion h3 {
+    font-size: 22px;
+    text-transform: capitalize;
+  }
+  * .notas .invasion p {
+    padding: 3 px;
+    width: 90%;
+    font-size: 18px;
+  }
+  * .notas #VerMas {
+    height: 40px;
+    width: 90px;
+    background-color: #59452C;
+    text-align: center;
+    text-decoration: none;
+    color: white;
+    border-radius: 6px;
+  }
+}
+@media only screen and (min-width: 1023px) {
+  * .encabezado {
+    height: 130px;
+  }
+  * .encabezado li a {
+    font-size: 1.9rem;
+    padding: 15px;
+  }
+  * .encabezado img {
+    height: 100px;
+    width: 100px;
+    margin-left: 20px;
+  }
+}
+* main {
+  height: 520px;
+  margin-top: 0;
+}
+* main .contenidoPrincipal {
+  height: 450px;
+}
+* main .contenidoPrincipal video {
+  height: 100%;
+  width: 100%;
+}
+* main .contenidoPrincipal .mainfondo {
+  display: flex;
+  height: 80%;
+  justify-content: center;
+  margin-top: 75px;
+  border-radius: 3px;
+}
+* main .contenidoPrincipal .mainfondo h1 {
+  font-size: 3.3rem;
+  text-align: center;
+  padding-top: 5px;
+  text-shadow: 5px 5px 3px white;
+  font-weight: 700;
+}
+* main .contenidoPrincipal .mainfondo h2 {
+  font-weight: 600;
+  text-shadow: 5px 5px 3px #D9C091;
+  font-size: 2.3rem;
+  font-weight: 650;
+}
+* .audio {
+  height: 50px;
+}
+* .audio audio {
+  height: 30px;
+  width: 350px;
+}
+* .notas {
+  height: 1400px;
+}
+* .notas h2 {
+  font-size: 2.6rem;
+  padding: 10px;
+  color: #8C071F;
+}
+* .notas h3 {
+  font-size: 2.8rem !important;
+  color: #D9C091;
+}
+* .notas .versalles {
+  font-weight: 500;
+}
+* .notas .versalles img {
+  height: 350px;
+  width: 50%;
+}
+* .notas .invasion {
+  font-weight: 500;
+}
+* .notas .invasion img {
+  height: 350px;
+}
+* .vehiculos_div {
+  height: 900px;
+}
+* .vehiculos_div .vehiculos {
+  text-align: center;
+  font-size: 2.3rem;
+}
+* .vehiculos_div #separador2 {
+  size: 20;
+  height: 2px;
+  color: #D9C091;
+}
+* .vehiculos_div .aleman {
+  display: flex;
+  flex-direction: row;
+}
+* .vehiculos_div .sovietico {
+  width: 300px;
+  padding-bottom: 40px;
+}
+* .vehiculos_div .animacion {
+  position: relative;
+  padding: 20px;
+}
+* .vehiculos_div .animacion img:last-child {
+  width: 300px;
+}
+* .vehiculos_div #VerMas {
+  height: 60px;
+  width: 90px;
+  padding: 20px;
+  margin-left: 43%;
+}
+* .footer {
+  height: 280px;
+}
+* .footer h2 {
+  color: #9FADBF;
+  padding-top: 2px;
+  font-size: 2.4rem;
+}
+* .footer p {
+  font-size: 1.5rem;
+  padding: 3px;
+  margin: 0px 0px 15px 15px;
+  width: 95%;
+}/*# sourceMappingURL=estilo.css.map */
