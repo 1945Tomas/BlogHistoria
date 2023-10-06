@@ -565,6 +565,7 @@
   height: 350px;
 }
 * .vehiculos_div {
+  padding: 20px;
   height: 900px;
 }
 * .vehiculos_div .vehiculos {
