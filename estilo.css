@@ -284,13 +284,13 @@
   background-repeat: no-repeat;
 }
 * .frases .card1 {
-  background-image: url(/multimedia/frases/frase1.jpg);
+  background-image: url(multimedia/frases/frase1.jpg);
 }
 * .frases .card2 {
-  background-image: url(/multimedia/frases/frase2.jpg);
+  background-image: url(multimedia/frases/frase2.jpg);
 }
 * .frases .card3 {
-  background-image: url(/multimedia/frases/frase3.jpg);
+  background-image: url(multimedia/frases/frase3.jpg);
 }
 * .frases .intofrase {
   background-color: rgba(0, 0, 0, 0.283);
@@ -540,7 +540,7 @@
   width: 350px;
 }
 * .notas {
-  height: 1400px;
+  height: 1300px;
 }
 * .notas h2 {
   font-size: 2.6rem;
@@ -552,21 +552,37 @@
   color: #D9C091;
 }
 * .notas .versalles {
+  height: 500px;
+  width: 70%;
   font-weight: 500;
 }
+* .notas .versalles p {
+  padding: 10px;
+}
 * .notas .versalles img {
-  height: 350px;
+  height: 370px;
   width: 50%;
 }
 * .notas .invasion {
+  height: 500px;
+  width: 70%;
+  padding: 20px;
   font-weight: 500;
 }
 * .notas .invasion img {
-  height: 350px;
+  height: 370px;
+  width: 60%;
+}
+* .notas .invasion p {
+  padding: 10px;
 }
 * .vehiculos_div {
   padding: 20px;
   height: 900px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 * .vehiculos_div .vehiculos {
   text-align: center;
@@ -597,6 +613,9 @@
   width: 90px;
   padding: 20px;
   margin-left: 43%;
+}
+* .frases {
+  height: 1300px;
 }
 * .footer {
   height: 280px;

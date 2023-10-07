@@ -308,13 +308,13 @@ z-index: -1;
         background-repeat:no-repeat;
     }
     .card1{
-        background-image: url(/multimedia/frases/frase1.jpg);
+        background-image: url(multimedia/frases/frase1.jpg);
     }
     .card2{
-        background-image: url(/multimedia/frases/frase2.jpg);
+        background-image: url(multimedia/frases/frase2.jpg);
     }
     .card3{
-        background-image: url(/multimedia/frases/frase3.jpg);
+        background-image: url(multimedia/frases/frase3.jpg);
     }
         .intofrase{
             background-color:  (rgba(0, 0, 0, 0.283));
@@ -578,7 +578,7 @@ main{
         }
 }
 .notas{
-    height: 1400px;
+    height: 1300px;
     h2{
     font-size: 2.6rem;
     padding: 10px;
@@ -589,16 +589,28 @@ main{
         color: $Color3;
     }
     .versalles{
+        height: 500px;
+        width: 70%;
         font-weight: 500;
+        p{
+            padding: 10px;
+        }
         img{
-        height: 350px;
+        height: 370px;
         width: 50%;
     } 
     }
     .invasion{
+        height: 500px;
+        width: 70%;
+        padding: 20px;
         font-weight: 500;
         img{
-            height: 350px;
+            height: 370px;
+            width: 60%;
+        }
+        p{
+            padding: 10px;
         }
     }
 }
@@ -606,6 +618,10 @@ main{
 .vehiculos_div{
     padding: 20px;
     height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     .vehiculos{
     text-align: center;
     font-size: 2.3rem;
@@ -636,6 +652,9 @@ main{
     padding: 20px;
     margin-left: 43%;
 }
+}
+.frases{
+    height: 1300px;
 }
 .footer{
     height: 280px;
