@@ -95,14 +95,15 @@
   align-self: center;
 }
 * .notas {
-  height: 1000px;
+  height: 1360px;
   width: 100%;
   background-color: white;
-  padding: 2px;
   display: flex;
   flex-direction: column;
-  justify-content: space-evenly;
+  justify-content: space-around;
   align-items: center;
+  margin-top: auto;
+  padding: 20px;
 }
 * .notas h2 {
   font-size: 1.6rem;
@@ -112,11 +113,10 @@
 * .notas #separador1 {
   width: 70%;
   color: #8C071F;
-  margin: 5 auto;
 }
 * .notas .versalles {
-  height: 390px;
-  width: 95%;
+  height: 400px;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -137,10 +137,10 @@
 * .notas .versalles p {
   text-align: justify;
   padding: 5 px;
-  width: 90%;
+  width: 100%;
 }
 * .notas .invasion {
-  height: 300px;
+  height: 760px;
   width: 95%;
   display: flex;
   flex-direction: column;
@@ -164,19 +164,11 @@
   padding: 5 px;
   width: 90%;
 }
-* .notas #VerMas {
-  height: 30px;
-  width: 80px;
-  background-color: #59452C;
-  text-align: center;
-  text-decoration: none;
-  color: white;
-  border-radius: 6px;
-}
 * .vehiculos_div {
-  height: 450px;
+  height: 440px;
   width: 100%;
   background-color: white;
+  margin: auto;
 }
 * .vehiculos_div .vehiculos {
   text-align: center;
@@ -313,7 +305,7 @@
   margin-top: 10px;
 }
 * .footer {
-  height: 200px;
+  height: 250px;
   width: 100%;
   text-align: center;
   background-color: black;
@@ -335,12 +327,12 @@
     padding: 10px;
   }
 }
-@media only screen and (min-width: 520px) {
+@media only screen and (min-width: 520px) and (max-width: 720px) {
   * .frases {
     height: 1100px;
   }
 }
-@media only screen and (min-width: 720px) and (max-width: 1023px) {
+@media only screen and (min-width: 721px) and (max-width: 1023px) {
   * main {
     height: 420px;
     margin-top: 0;
@@ -425,6 +417,9 @@
     margin-left: 43%;
   }
 }
+* .footer {
+  height: 350px;
+}
 * .footer h2 {
   color: #9FADBF;
   padding-top: 5px;
@@ -436,56 +431,54 @@
   margin: 0px 0px 15px 15px;
   width: 95%;
 }
-@media only screen and (min-width: 992px) and (max-width: 1023px) {
-  * .notas {
-    height: 1300px;
-  }
-  * .notas h2 {
-    font-size: 2.5rem;
-  }
-  * .notas .versalles {
-    height: 400px;
-    width: 70%;
-    padding: 15px;
-  }
-  * .notas .versalles img {
-    height: 400px;
-    width: 100%;
-  }
-  * .notas .versalles h3 {
-    font-size: 22px;
-  }
-  * .notas .versalles p {
-    padding: 3 px;
-    width: 90%;
-    font-size: 18px;
-  }
-  * .notas .invasion {
-    height: 400px;
-    width: 70%;
-  }
-  * .notas .invasion img {
-    height: 400px;
-    width: 100%;
-  }
-  * .notas .invasion h3 {
-    font-size: 22px;
-    text-transform: capitalize;
-  }
-  * .notas .invasion p {
-    padding: 3 px;
-    width: 90%;
-    font-size: 18px;
-  }
-  * .notas #VerMas {
-    height: 40px;
-    width: 90px;
-    background-color: #59452C;
-    text-align: center;
-    text-decoration: none;
-    color: white;
-    border-radius: 6px;
-  }
+* .footer .notas {
+  height: 1300px;
+}
+* .footer .notas h2 {
+  font-size: 2.5rem;
+}
+* .footer .notas .versalles {
+  height: 400px;
+  width: 70%;
+  padding: 15px;
+}
+* .footer .notas .versalles img {
+  height: 400px;
+  width: 100%;
+}
+* .footer .notas .versalles h3 {
+  font-size: 22px;
+}
+* .footer .notas .versalles p {
+  padding: 3 px;
+  width: 90%;
+  font-size: 18px;
+}
+* .footer .notas .invasion {
+  height: 400px;
+  width: 70%;
+}
+* .footer .notas .invasion img {
+  height: 400px;
+  width: 100%;
+}
+* .footer .notas .invasion h3 {
+  font-size: 22px;
+  text-transform: capitalize;
+}
+* .footer .notas .invasion p {
+  padding: 3 px;
+  width: 90%;
+  font-size: 18px;
+}
+* .footer .notas #VerMas {
+  height: 40px;
+  width: 90px;
+  background-color: #59452C;
+  text-align: center;
+  text-decoration: none;
+  color: white;
+  border-radius: 6px;
 }
 @media only screen and (min-width: 1023px) {
   * .encabezado {
@@ -500,134 +493,128 @@
     width: 100px;
     margin-left: 20px;
   }
-}
-* main {
-  height: 520px;
-  margin-top: 0;
-}
-* main .contenidoPrincipal {
-  height: 450px;
-}
-* main .contenidoPrincipal video {
-  height: 100%;
-  width: 100%;
-}
-* main .contenidoPrincipal .mainfondo {
-  display: flex;
-  height: 80%;
-  justify-content: center;
-  margin-top: 75px;
-  border-radius: 3px;
-}
-* main .contenidoPrincipal .mainfondo h1 {
-  font-size: 3.3rem;
-  text-align: center;
-  padding-top: 5px;
-  text-shadow: 5px 5px 3px white;
-  font-weight: 700;
-}
-* main .contenidoPrincipal .mainfondo h2 {
-  font-weight: 600;
-  text-shadow: 5px 5px 3px #D9C091;
-  font-size: 2.3rem;
-  font-weight: 650;
-}
-* .audio {
-  height: 50px;
-}
-* .audio audio {
-  height: 30px;
-  width: 350px;
-}
-* .notas {
-  height: 1300px;
-}
-* .notas h2 {
-  font-size: 2.6rem;
-  padding: 10px;
-  color: #8C071F;
-}
-* .notas h3 {
-  font-size: 2.8rem !important;
-  color: #D9C091;
-}
-* .notas .versalles {
-  height: 500px;
-  width: 70%;
-  font-weight: 500;
-}
-* .notas .versalles p {
-  padding: 10px;
-}
-* .notas .versalles img {
-  height: 370px;
-  width: 50%;
-}
-* .notas .invasion {
-  height: 500px;
-  width: 70%;
-  padding: 20px;
-  font-weight: 500;
-}
-* .notas .invasion img {
-  height: 370px;
-  width: 60%;
-}
-* .notas .invasion p {
-  padding: 10px;
-}
-* .vehiculos_div {
-  padding: 20px;
-  height: 900px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-}
-* .vehiculos_div .vehiculos {
-  text-align: center;
-  font-size: 2.3rem;
-}
-* .vehiculos_div #separador2 {
-  size: 20;
-  height: 2px;
-  color: #D9C091;
-}
-* .vehiculos_div .aleman {
-  display: flex;
-  flex-direction: row;
-}
-* .vehiculos_div .sovietico {
-  width: 300px;
-  padding-bottom: 40px;
-}
-* .vehiculos_div .animacion {
-  position: relative;
-  padding: 20px;
-}
-* .vehiculos_div .animacion img:last-child {
-  width: 300px;
-}
-* .vehiculos_div #VerMas {
-  height: 60px;
-  width: 90px;
-  padding: 20px;
-  margin-left: 43%;
-}
-* .frases {
-  height: 1500px;
-}
-* .footer {
-  height: 280px;
-}
-* .footer h2 {
-  color: #9FADBF;
-  padding-top: 2px;
-  font-size: 2.4rem;
-}
-* .footer p {
-  font-size: 1.5rem;
-  padding: 3px;
-  margin: 0px 0px 15px 15px;
-  width: 95%;
+  * main {
+    height: 520px;
+    margin-top: 0;
+  }
+  * main .contenidoPrincipal {
+    height: 450px;
+  }
+  * main .contenidoPrincipal video {
+    height: 100%;
+    width: 100%;
+  }
+  * main .contenidoPrincipal .mainfondo {
+    display: flex;
+    height: 80%;
+    justify-content: center;
+    margin-top: 75px;
+    border-radius: 3px;
+  }
+  * main .contenidoPrincipal .mainfondo h1 {
+    font-size: 3.3rem;
+    text-align: center;
+    padding-top: 5px;
+    text-shadow: 5px 5px 3px white;
+    font-weight: 700;
+  }
+  * main .contenidoPrincipal .mainfondo h2 {
+    font-weight: 600;
+    text-shadow: 5px 5px 3px #D9C091;
+    font-size: 2.3rem;
+    font-weight: 650;
+  }
+  * .audio {
+    height: 50px;
+  }
+  * .audio audio {
+    height: 30px;
+    width: 350px;
+  }
+  * .notas {
+    height: 1300px;
+  }
+  * .notas h2 {
+    font-size: 2.6rem;
+    padding: 10px;
+    color: #8C071F;
+  }
+  * .notas h3 {
+    font-size: 2.8rem !important;
+    color: #D9C091;
+  }
+  * .notas .versalles {
+    height: 500px;
+    width: 70%;
+    font-weight: 500;
+  }
+  * .notas .versalles p {
+    padding: 10px;
+  }
+  * .notas .versalles img {
+    height: 370px;
+    width: 50%;
+  }
+  * .notas .invasion {
+    height: 500px;
+    width: 70%;
+    padding: 20px;
+    font-weight: 500;
+  }
+  * .notas .invasion img {
+    height: 370px;
+    width: 60%;
+  }
+  * .notas .invasion p {
+    padding: 10px;
+  }
+  * .vehiculos_div {
+    padding: 20px;
+    height: 900px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  * .vehiculos_div .vehiculos {
+    text-align: center;
+    font-size: 2.3rem;
+  }
+  * .vehiculos_div #separador2 {
+    size: 20;
+    height: 2px;
+    color: #D9C091;
+  }
+  * .vehiculos_div .aleman {
+    display: flex;
+    flex-direction: row;
+  }
+  * .vehiculos_div .sovietico {
+    width: 300px;
+    padding-bottom: 40px;
+  }
+  * .vehiculos_div .animacion {
+    position: relative;
+    padding: 20px;
+  }
+  * .vehiculos_div .animacion img:last-child {
+    width: 300px;
+  }
+  * .frases {
+    height: 1500px;
+  }
+  * .footer {
+    height: 280px;
+  }
+  * .footer h2 {
+    color: #9FADBF;
+    padding-top: 2px;
+    font-size: 2.4rem;
+  }
+  * .footer p {
+    font-size: 1.5rem;
+    padding: 3px;
+    margin: 0px 0px 15px 15px;
+    width: 95%;
+  }
 }/*# sourceMappingURL=estilo.css.map */

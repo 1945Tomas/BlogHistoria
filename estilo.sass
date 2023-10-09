@@ -1,5 +1,4 @@
 
-
 //Mi PALETA
 $Color1: #9FADBF
 $Color2: #8C071F
@@ -10,48 +9,47 @@ $Color6: #400101
 
 
 *
-    box-sizing: border-box
-    margin: 0%
-    padding: 0
+box-sizing: border-box
+margin: 0%
+padding: 0
 
 body
-    background-color: rgba(255, 255, 255, 0.852)
+background-color: rgba(255, 255, 255, 0.852)
 
 
 .encabezado
-    height: 100px
-    margin: 0
-    position:sticky
-    width: 100%
-    padding: 3px
-    background-color:$Color6
-    display: flex
-    align-items: center
-    justify-content: space-between
-    align-content:baseline
-    
+height: 100px
+margin: 0
+position:sticky
+width: 100%
+padding: 3px
+background-color:$Color6
+display: flex
+align-items: center
+justify-content: space-between
+align-content:baseline
     li
-        list-style: none
-        float: right
+    list-style: none
+    float: right
         a  
-            display: flex
-            flex-direction: column
-            justify-content: space-around
-            align-items: center
-            text-decoration: none
-            font-size: 1rem
-            text-transform: capitalize
-            color: $Color3
-            margin-right: 6px
-            
-
+        display: flex
+        flex-direction: column
+        justify-content: space-around
+        align-items: center
+        text-decoration: none
+        font-size: 1rem
+        text-transform: capitalize
+        color: $Color3
+        margin-right: 6px
+        
+ 
 img
-    width: 80px
-    height: 80px
-    padding-left: 15px
-    border-radius: 50%
-    
+width: 80px
+height: 80px
+padding-left: 15px
+border-radius: 50%
 
+  
 
 main
 height: 200px
@@ -65,7 +63,7 @@ flex-direction: column
 justify-content: space-between
 align-items: center
 margin-top: 0
-video
+    video
 position: absolute
 left: 0
 top: 0
@@ -74,26 +72,26 @@ width: 100%
 z-index: -1
 
 .mainfondo
-    display: flex
-    flex-direction: column
-    justify-content: center
-    background-color: #bfb39b52
-    height: 140px
-    margin-top: 45px
-    border-radius: 3px
+display: flex
+flex-direction: column
+justify-content: center
+background-color: #bfb39b52
+height: 140px
+margin-top: 45px
+border-radius: 3px
     h1
-    font-size: 1rem
-    text-align: center
-    padding-top: 5px
-    text-shadow: 5px 5px 3px white
-    font-weight: 700
-    
+font-size: 1rem
+text-align: center
+padding-top: 5px
+text-shadow: 5px 5px 3px white
+font-weight: 700
+
     h2
-    font-weight: 600
-    text-shadow: 5px 5px 3px white
-    font-size: 1rem
-    font-weight: 550
-    
+font-weight: 600
+text-shadow: 5px 5px 3px white
+font-size: 1rem
+font-weight: 550
+
 
 
 
@@ -110,14 +108,15 @@ z-index: -1
 
 //SECTOR NOTAS
 .notas
-    height: 1000px
+    height: 1360px
     width: 100%
     background-color: white
-    padding: 2px
     display: flex
     flex-direction: column
-    justify-content: space-evenly
+    justify-content: space-around
     align-items: center
+    margin-top: auto
+    padding: 20px
     h2
         font-size: 1.6rem
         text-align: center
@@ -126,11 +125,10 @@ z-index: -1
     #separador1
         width: 70%
         color: $Color2
-        margin: 5 auto 
     
     .versalles
-        height: 390px
-        width: 95%
+        height: 400px
+        width: 100%
         display: flex
         flex-direction: column
         justify-content: center
@@ -150,18 +148,18 @@ z-index: -1
         p
             text-align: justify
             padding: 5 px
-            width: 90%
+            width: 100%
         
     
     .invasion
-        height: 300px
+        height: 700px
         width: 95%
         display: flex
         flex-direction: column
         justify-content: center
         align-items: center
         text-align: center
-        padding: 5px
+        padding: 2px
         margin-top: 0 auto
         border-radius: 5px solid yellow
         img
@@ -177,15 +175,6 @@ z-index: -1
             padding: 5 px
             width: 90%
         
-    
-    #VerMas
-        height: 30px
-        width: 80px
-        background-color: $Color4
-        text-align: center
-        text-decoration: none
-        color: white
-        border-radius: 6px
     
 
 //VEHICULOS
@@ -294,7 +283,7 @@ z-index: -1
         color:$Color1
         padding-top: 15px
         text-transform: uppercase
-
+     
     .card
         background-color: black
         height: 500px
@@ -337,7 +326,7 @@ z-index: -1
         
 
 .footer
-    height: 200px
+    height: 250px
     width: 100%
     text-align: center
     background-color: black
@@ -365,12 +354,15 @@ z-index: -1
     
 
 
-@media only screen and (min-width: 520px)
+
+
+@media only screen and (min-width: 520px)and (max-width:720px) 
 .frases
     height: 1100px
 
-    
-@media only screen and (min-width: 720px)and (max-width:1023px)
+
+
+@media only screen and (min-width: 721px)and (max-width:1023px)
 main
     height: 420px
     margin-top: 0
@@ -414,7 +406,7 @@ main
         font-weight: 500
         img
         height: 300px
-
+     
     
     .invasion
         font-weight: 500
@@ -459,6 +451,7 @@ main
 
 
 .footer
+    height: 350px
     h2
         color: $Color1
         padding-top: 5px
@@ -470,9 +463,6 @@ main
         margin: 0px 0px 15px 15px 
         width: 95%
     
-
-@media only screen and (min-width: 992px)and (max-width: 1023px)
-//SECTOR NOTAS
 .notas
     height: 1300px
     h2
@@ -524,21 +514,20 @@ main
 
 
 @media only screen and (min-width: 1023px)
-    .encabezado
-    height: 130px
-        li
-            a
-                font-size: 1.9rem
-                padding: 15px
+.encabezado
+height: 130px
+    li
+        a
+            font-size: 1.9rem
+            padding: 15px
             
-        
+    
     img
         height: 100px
         width: 100px
         margin-left: 20px
     
     
-
 main
     height: 520px
     margin-top: 0
@@ -598,7 +587,7 @@ main
         img
         height: 370px
         width: 50%
-
+     
     
     .invasion
         height: 500px
@@ -645,12 +634,6 @@ main
     img:last-child
         width: 300px
     
-
-#VerMas
-    height: 60px
-    width: 90px
-    padding: 20px
-    margin-left: 43%
 
 
 .frases
